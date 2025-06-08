@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS movie_recs;
+USE movie_recs;
+
+CREATE TABLE IF NOT EXISTS movies (
+  id INT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  poster_path VARCHAR(255) NOT NULL,
+  watched TINYINT(1) NOT NULL
+);
